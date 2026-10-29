@@ -7,7 +7,7 @@ class Manufacturer(models.Model):
     county = models.CharField(max_length=255)
 
     def __str__(self) -> str:
-        return f"{self.name} {self.county}"
+        return {self.name} + "" + {self.county}
 
 
 class Driver(AbstractUser):
